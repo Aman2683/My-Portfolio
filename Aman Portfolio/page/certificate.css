@@ -1,0 +1,52 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Add your desired background color */
+}
+
+.certificate-container {
+    display: flex;
+    flex-direction: column; /* Display certificates vertically */
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scroll */
+    height: 100vh;
+}
+
+.certificate {
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px; /* Add some space between certificates */
+}
+
+.certificate:hover {
+    transform: scale(1.2); /* Zoom in on hover */
+}
+
+.certificate img {
+    width: 100%; /* Make the image width 100% */
+    max-width: 400px; /* Set a maximum width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.certificate p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .certificate-container {
+        overflow-y: auto; /* Enable vertical scroll for smaller screens */
+    }
+}
+
+
+
+
+
+
+
